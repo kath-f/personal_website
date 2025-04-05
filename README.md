@@ -1,2 +1,5 @@
-# Clique no arquivo "front_page.html" para iniciar na front page do site
-# Criado por Kathryn Froes
+# Website Pessoal
+Estou fazendo para um trabalho de escola.
+Vai ser um meio de eu mostrar a minha arte e outros projectos.
+
+- Kathryn Froes
