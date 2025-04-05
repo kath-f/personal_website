@@ -25,12 +25,20 @@ body
 	background-repeat: no-repeat;
 	background-attachment:fixed;
 	background-position: center;
-
-	image-rendering: crisp-edges;
 	
 	font-family:monospace;
 	color: var(--bright_orange);
 	text-align: left;
+}
+
+.pixelated
+{
+	image-rendering: pixelated;
+}
+
+.smoot
+{
+	image-rendering: smooth;
 }
 
 .bordered
