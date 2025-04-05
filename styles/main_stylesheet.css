@@ -1,3 +1,10 @@
+:root
+{
+	--dark_purp: 9.5, 0, 20.4;
+	--bright_orange: #ff6500;
+}
+
+
 .album_cover
 {
 	text-align:center;
@@ -13,14 +20,14 @@
 
 body
 {
-	background-color:#060010;
+	background-color:rgb(var(--dark_purp));
 	background-image: url("../assets/img/bg_img.png");
 	background-repeat: no-repeat;
 	background-attachment:fixed;
 	background-position: center;
 	
 	font-family:monospace;
-	color: #ff6500;
+	color: var(--bright_orange);
 	text-align: left;
 }
 
@@ -28,14 +35,21 @@ body
 {
 	border-style: solid;
 	border-width: 1px;
+	background-color: rgba(var(--dark_purp), 0.9);
+
+}
+
+hr
+{
+	color: var(--bright_orange);
 }
 
 .menu_bar
 {
 	border-style: solid;
 	border-width: 1px;
-	background-color: #060010;
-	opacity:0.8;
+	background-color: rgb(var(--dark_purp));
+	opacity:0.9;
 	display:flex;
 	justify-content: space-around;
 	position:fixed;
@@ -50,7 +64,7 @@ dt
 	margin-left:05px;
 }
 
-h1, h2
+h1, h2, h3
 {
 	text-align: center;
 }
