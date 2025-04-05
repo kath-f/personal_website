@@ -1,0 +1,56 @@
+.album_cover
+{
+	text-align:center;
+	width:30%;
+}
+
+.center
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+body
+{
+	background-color:#060010;
+	background-image: url("../assets/img/bg_img.png");
+	background-repeat: no-repeat;
+	background-attachment:fixed;
+	background-position: center;
+	
+	font-family:monospace;
+	color: #ff6500;
+	text-align: left;
+}
+
+.bordered
+{
+	border-style: solid;
+	border-width: 1px;
+}
+
+.menu_bar
+{
+	border-style: solid;
+	border-width: 1px;
+	background-color: #060010;
+	opacity:0.8;
+	display:flex;
+	justify-content: space-around;
+	position:fixed;
+	top:1%;
+	width:98%;
+}
+
+dt
+{
+	font-size:10pt;
+	font-weight: bold;
+	margin-left:05px;
+}
+
+h1, h2
+{
+	text-align: center;
+}

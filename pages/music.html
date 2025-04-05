@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title> Música </title>
+		<link rel="stylesheet" href="../styles/main_stylesheet.css">
+
+		<style>
+		.container1
+		{
+			display:grid;
+			grid-template-rows: 250px 250px;
+			grid-template-columns: 250px 250px;
+		}
+		.container2
+		{
+			display:grid;
+			grid-template-rows: 300px 300px 300px;
+			grid-template-columns: 300px 300px 300px;
+		}
+
+		</style>
+	</head>
+	
+	<body>
+		<h1 style="position:absolute; top:5%; left:45.55%;"> Música </h1>
+		
+		<section id="my_albums">
+		<!-- div para os meus albuns-->
+		<div class="bordered" style="position:absolute; top:20%; left:5%; width:40%;">
+			<h2>Meus Álbuns</h2>
+			<p style="text-align:center;"> Meus albuns lançados até hoje, como <em> sleepingkittystar </em> </p>
+			<div class="container1">
+				<!--unfinished songs-->
+				<div style="grid-row-start:1; grid-row-end:2; grid-column-start:1; grid-column-end:2; text-align:center;">
+					<a href="albums/unfinished_songs.html">
+					<figure>
+						<img src="../assets/img/album_covers/unfinished_songs.png" style="width:100%;">
+						<figcaption> unfinished songs that would have gone lost to time <br> sleepingkittystar <br> 14/12/2022 </figcaption>
+					</figure>
+					</a>
+				</div>
+				<!--katjams-->
+				<div style="grid-row-start:1; grid-row-end:2; grid-column-start:2; grid-column-end:3; text-align:center;">
+					<a href="albums/katjams.html">
+					<figure>
+						<img src="../assets/img/album_covers/katjams.jpg" style="width:100%">
+						<figcaption> katjams comp. <br> sleepingkittystar <br> 5/10/2023 </figcaption>
+					</figure>
+					</a>
+				</div>
+				<!--moon, venus, lamp post -->
+				<div style="grid-row-start:2; grid-row-end:3; grid-column-start:1; grid-column-end:2; text-align:center;">
+					<a href="albums/moon_venus_lamppost.html">
+					<figure>
+						<img src="../assets/img/album_covers/moon_venus_lamppost.png" style="width:100%">
+						<figcaption> moon, venus, lamp post <br> sleepingkittystar <br> 16/09/2024 </figcaption>
+					</figure>
+					</a>
+				</div>
+				<!--tell ur grandma-->
+				<div style="grid-row-start:2; grid-row-end:3; grid-column-start:2; grid_column-end:3; text-align:center;">
+					<a href="albums/tell_ur_grandma.html">
+					<figure>
+						<img src="../assets/img/album_covers/tell_ur_grandma.png" style="width:100%">
+						<figcaption> tell ur grandma to go die already <br> sleepingkittystar <br> 30/12/2024 </figcaption>
+					</figure>
+					</a>
+				</div>
+			</div>
+		</div>
+		</section>
+		
+		<section id="demos">	
+		<!-- div para as minhas demos-->	
+		<div class="bordered" style="position:absolute; top:20%; right:5%; width:40%;">
+			<h2>Minhas Demos</h2>
+			<dl>
+				<!-- sdfoe-->
+				<dt> Self Destructive Fit of Euphoria </dt>
+				<dd> 
+					<br>
+					<audio controls> <source src="../assets/audio/demos/self_destructive_fit_of_euphoria.mp3" type="audio/mpeg"> </audio>
+					<p>	
+						Eu gravei essa eu Outubro de 2023, eu acho. Eu quero lançar ela oficialmente algum dia,
+						mas não consigo achar uma banda que seja compatível comigo, musicalmente. <br>
+						É uma das únicas músicas que eu tenho letras detalhadas e não odeio elas. <br>
+				    	</p>
+				</dd>
+
+				<!-- dead roses-->
+				<dt> Dead Roses </dt>
+				<dd>
+					<br>
+					<audio controls> <source src="../assets/audio/demos/dead_roses.mp3" type="audio/mpeg"> </audio>
+					<p>
+						Essa é outra gravada por volta de Outubro de 2023, mas eu compus ela no começo de 2023.
+						Eu costumava gostar dela mais, mas nah, talvez, não sei.
+					</p>
+				</dd>
+
+				<!-- new name-->
+				<dt> New Name </dt>
+				<dd>
+					<br>
+					<audio controls> <source src="../assets/audio/demos/new_name_demo1.mp3" type="audio/mpeg"> </audio>
+					<audio controls> <source src="../assets/audio/demos/new_name_demo2.mp3" type="audio/mpeg"> </audio>
+					<audio controls> <source src="../assets/audio/demos/new_name_demo3.wav" type="audio/wave"> </audio>
+					<p>
+						Eu tenho essa música como idéia a muito tempo, desde 2023 pelo menos. Eu quero terminar ela mas não tenho certeza como, 
+						também precisa de banda.
+					</p>
+				</dd>
+
+				<!-- more drugs -->
+				<dt> More Drugs </dt>
+				<dd>
+					<br>
+					<audio controls> <source src="../assets/audio/demos/more_drugs.wav" type="audio/wave"> </audio>
+					<p>
+						Eu gravei essa um pouco como uma piada, eu estava tomando clonazepam na época, ainda sinto falta :).
+						Eu acho que gravei ela pelo final de 2023.
+					</p>
+				</dd>	
+			</dl>
+		</div>		
+		</section>
+		
+		<div class="menu_bar" >
+			<!-- botão para voltar para a front page-->
+			<a href="../front_page.html"> <span class="bordered"> &lt;-- Voltar </span> </a>
+			<a href="#my_albums"> <span class="bordered"> Meus Álbums </span> </a>
+			<a href="#demos"> <span class="bordered"> Minhas Demos </span> </a>
+		</div>
+
+	</body>
+</html>
