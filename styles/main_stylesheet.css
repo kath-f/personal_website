@@ -18,6 +18,14 @@
 	margin-right: auto;
 }
 
+.flex_container
+{
+	display:flex;
+	justify-content:space-around;
+	text-align:center;
+			
+}
+
 body
 {
 	background-color:rgb(var(--dark_purp));
