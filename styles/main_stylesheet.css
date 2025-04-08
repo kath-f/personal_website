@@ -1,7 +1,7 @@
 :root
 {
-	--dark_purp: 9.5, 0, 20.4;
-	--bright_orange: #ff6500;
+	--bg_col: 9.5, 0, 20.4;
+	--fg_col: 255, 101, 0;
 }
 
 
@@ -28,14 +28,14 @@
 
 body
 {
-	background-color:rgb(var(--dark_purp));
+	background-color:rgb(var(--bg_col));
 	background-image: url("../assets/img/bg_img.png");
 	background-repeat: no-repeat;
 	background-attachment:fixed;
 	background-position: center;
 	
 	font-family:monospace;
-	color: var(--bright_orange);
+	color: rgb(var(--fg_col));
 	text-align: left;
 }
 
@@ -53,20 +53,19 @@ body
 {
 	border-style: solid;
 	border-width: 1px;
-	background-color: rgba(var(--dark_purp), 0.9);
-
+	background-color: rgba(var(--bg_col), 0.8);
 }
 
 hr
 {
-	color: var(--bright_orange);
+	color: rgb(var(--fg_col));
 }
 
 .menu_bar
 {
 	border-style: solid;
 	border-width: 1px;
-	background-color: rgb(var(--dark_purp));
+	background-color: rgb(var(--bg_col));
 	opacity:0.9;
 	display:flex;
 	justify-content: space-around;
