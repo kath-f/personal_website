@@ -4,26 +4,67 @@
  *
  */
 
+/* variables go here */
 :root
 {
 	--bg_col: 9.5, 0, 20.4;
 	--fg_col: 255, 101, 0;
 }
 
-
-.album_cover
+/* styles that will apply to every element */
+body
 {
-	text-align:center;
-	width:30%;
+	display:block;
+	background-color:rgb(var(--bg_col));
+	background-image: url("../assets/img/bg_img.png");
+	background-repeat: no-repeat;
+	background-attachment:fixed;
+	background-position: center;
+
+	
+	
+	font-family:monospace;
+	color: rgb(var(--fg_col));
+	text-align: left;
+	
+	letter-spacing:3px;
+	line-height:1.5;
 }
 
-.center
+/* This is to make the headers centered */
+h1, h2, h3
 {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+	text-align: center;
 }
 
+/* hr isn't affected by what i defined in body for some reason, so this is to make it the foreground color */
+hr
+{
+	color: rgb(var(--fg_col));
+}
+
+/* this is here becasue i wanted detailed list titles to be a little bigger and have a little margin  */
+dt
+{
+	font-size:10pt;
+	font-weight: bold;
+	margin-left:05px;
+}
+
+p
+{
+	margin-left:5px
+}
+
+/* class to denote something as bordered (mostly for divs and spans) */
+.bordered
+{
+	border-style: solid;
+	border-width: 1px;
+	background-color: rgba(var(--bg_col), 0.8);
+}
+
+/* flex container class, useful for putting stuff side to side */
 .flex_container
 {
 	display:flex;
@@ -32,41 +73,20 @@
 			
 }
 
-body
-{
-	background-color:rgb(var(--bg_col));
-	background-image: url("../assets/img/bg_img.png");
-	background-repeat: no-repeat;
-	background-attachment:fixed;
-	background-position: center;
-	
-	font-family:monospace;
-	color: rgb(var(--fg_col));
-	text-align: left;
-}
-
-.pixelated
+/* give this class to images to have them do no filtering (won't blur my pixel art) */
+.pixelated_image
 {
 	image-rendering: pixelated;
 }
 
-.smoot
+/* give this class to images to have them be filter (will make them smoother) */
+.smooth_image
 {
 	image-rendering: smooth;
 }
 
-.bordered
-{
-	border-style: solid;
-	border-width: 1px;
-	background-color: rgba(var(--bg_col), 0.8);
-}
-
-hr
-{
-	color: rgb(var(--fg_col));
-}
-
+/* this defines the style for the shitty menu bar i have currently
+ * TODO: swap current menubar for something better */
 .menu_bar
 {
 	border-style: solid;
@@ -80,14 +100,3 @@ hr
 	width:98%;
 }
 
-dt
-{
-	font-size:10pt;
-	font-weight: bold;
-	margin-left:05px;
-}
-
-h1, h2, h3
-{
-	text-align: center;
-}
