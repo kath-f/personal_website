@@ -54,6 +54,9 @@ dt
 	font-size:10pt;
 	font-weight: bold;
 	margin-left:05px;
+	margin-top:20px;
+	margin-bottom:5px;
+
 }
 
 p
@@ -66,6 +69,7 @@ p
 {
 	border-style: solid;
 	border-width: 1px;
+	border-radius:5px;
 	background-color: rgba(var(--bg_col), 0.8);
 }
 
@@ -105,3 +109,12 @@ p
 	width:98%;
 }
 
+.button
+{
+	border-style: solid;
+	border-color:rgb(var(--fg_col));
+	border-radius: 5px;
+	background-color:rgb(var(--fg_col));
+	text-align:center;
+	color:rgb(var(--bg_col));
+}

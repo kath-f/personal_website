@@ -6,12 +6,204 @@
 		<link rel="stylesheet" href="../styles/main_stylesheet.css">
 
 		<style>
-		.container1
-		{
-			display:grid;
-			grid-template-rows: 250px 250px;
-			grid-template-columns: 250px 250px;
-		}
+			.container1
+			{
+				display:grid;
+				grid-template-rows: 250px 250px;
+				grid-template-columns: 250px 250px;
+			}
+
+			/* Gambiarra para fazer labels funcionarem como um botão de "leia mais" */
+			#content1{
+				display:none;
+			}
+			#ch1:checked ~ #content1{
+				display:block;
+			}
+			#ch1:checked ~ label{
+				display:none;
+			}
+
+			#content2{
+				display:none;
+			}
+			#ch2:checked ~ #content2{
+				display:block;
+			}
+			#ch2:checked ~ label{
+				display:none;
+			}
+
+			#content3{
+				display:none;
+			}
+			#ch3:checked ~ #content3{
+				display:block;
+			}
+			#ch3:checked ~ label{
+				display:none;
+			}
+
+			#content4{
+				display:none;
+			}
+			#ch4:checked ~ #content4{
+				display:block;
+			}
+			#ch4:checked ~ label{
+				display:none;
+			}
+
+			#content5{
+				display:none;
+			}
+			#ch5:checked ~ #content5{
+				display:block;
+			}
+			#ch5:checked ~ label{
+				display:none;
+			}
+
+			#content6{
+				display:none;
+			}
+			#ch6:checked ~ #content6{
+				display:block;
+			}
+			#ch6:checked ~ label{
+				display:none;
+			}
+
+			#content7{
+				display:none;
+			}
+			#ch7:checked ~ #content7{
+				display:block;
+			}
+			#ch7:checked ~ label{
+				display:none;
+			}
+
+			#content8{
+				display:none;
+			}
+			#ch8:checked ~  #content8{
+				display:block;
+			}
+			#ch8:checked ~ label{
+				display:none;
+			}
+
+			#content9{
+				display:none;
+			}
+			#ch9:checked ~ #content9{
+				display:block;
+			}
+			#ch9:checked ~ label{
+				display:none;
+			}
+
+			#content10{
+				display:none;
+			}
+			#ch10:checked ~ #content10{
+				display:block;
+			}
+			#ch10:checked ~ label{
+				display:none;
+			}
+
+			#content11{
+				display:none;
+			}
+			#ch11:checked ~ #content11{
+				display:block;
+			}
+			#ch11:checked ~ label{
+				display:none;
+			}
+
+			#content12{
+				display:none;
+			}
+			#ch12:checked ~ #content12{
+				display:block;
+			}
+			#ch12:checked ~ label{
+				display:none;
+			}
+
+			#content13{
+				display:none;
+			}
+			#ch13:checked ~ #content13{
+				display:block;
+			}
+			#ch13:checked ~ label{
+				display:none;
+			}
+
+			#content14{
+				display:none;
+			}
+			#ch14:checked ~ #content14{
+				display:block;
+			}
+			#ch14:checked ~ label{
+				display:none;
+			}
+
+			#content15{
+				display:none;
+			}
+			#ch15:checked ~ #content15{
+				display:block;
+			}
+			#ch15:checked ~ label{
+				display:none;
+			}
+
+			#content16{
+				display:none;
+			}
+			#ch16:checked ~ #content16{
+				display:block;
+			}
+			#ch16:checked ~ label{
+				display:none;
+			}
+
+			#content17{
+				display:none;
+			}
+			#ch17:checked ~ #content17{
+				display:block;
+			}
+			#ch17:checked ~ label{
+				display:none;
+			}
+
+			#content18{
+				display:none;
+			}
+			#ch18:checked ~ #content18{
+				display:block;
+			}
+			#ch18:checked ~ label{
+				display:none;
+			}
+
+			#content19{
+				display:none;
+			}
+			#ch19:checked ~ #content19{
+				display:block;
+			}
+			#ch19:checked ~ label{
+				display:none;
+			}
+
 		</style>
 	</head>
 	
@@ -21,7 +213,8 @@
 			Add covers
 			Add tell ur grandma
 		-->
-		<h1 style="position:absolute; top:5%; left:45.55%;"> Música </h1>
+		<br>
+		<h1> Música </h1>
 		
 		<section id="my_albums">
 		<!-- div para os meus albuns-->
@@ -76,205 +269,310 @@
 			<dl>
 				<!-- sdfoe-->
 				<dt> Self Destructive Fit of Euphoria </dt>
-				<dd> 
-					<br>
+				<dd> 	
 					<audio controls> <source src="../assets/audio/demos/self_destructive_fit_of_euphoria.mp3" type="audio/mpeg"> </audio>
-					<p>	
-						Eu gravei essa em Outubro de 2023, eu acho. Eu quero lançar ela oficialmente algum dia,
-						mas não consigo achar uma banda que seja compatível comigo, musicalmente. <br>
-						É uma das únicas músicas que eu tenho letras detalhadas e não odeio elas. <br>
-				    	</p>
+					
+					<input type="checkbox" id="ch1" hidden>	
+					<div id="content1">
+						<p>	
+							Eu gravei essa em Outubro de 2023, eu acho. Eu quero lançar ela oficialmente algum dia,
+							mas não consigo achar uma banda que seja compatível comigo, musicalmente. <br>
+							É uma das únicas músicas que eu tenho letras detalhadas e não odeio elas. <br>	
+						</p>
+						<label for="ch1" class="button"> Menos </label>
+					</div>
+					<label for="ch1" class="button"> Sobre </label>
 				</dd>
 
 				<!-- dead roses-->
 				<dt> Dead Roses </dt>
 				<dd>
-					<br>
 					<audio controls> <source src="../assets/audio/demos/dead_roses.mp3" type="audio/mpeg"> </audio>
-					<p>
-						Essa é outra gravada por volta de Outubro de 2023, mas eu compus ela no começo de 2023.
-						Eu costumava gostar dela mais, mas nah, talvez, não sei.
-					</p>
+					
+					<input type="checkbox" id="ch2" hidden>
+					<div id="content2">
+						<p>
+							Essa é outra gravada por volta de Outubro de 2023, mas eu compus ela no começo de 2023.
+							Eu costumava gostar dela mais, mas nah, talvez, não sei.
+						</p>
+						<label for="ch2" class="button"> Menos </label>
+					</div>
+					<label for="ch2" class="button"> Sobre </label>
+
 				</dd>
 
 				<!-- new name-->
 				<dt> New Name </dt>
 				<dd>
-					<br>
 					<audio controls> <source src="../assets/audio/demos/new_name_demo1.mp3" type="audio/mpeg"> </audio>
 					<audio controls> <source src="../assets/audio/demos/new_name_demo2.mp3" type="audio/mpeg"> </audio>
 					<audio controls> <source src="../assets/audio/demos/new_name_demo3.wav" type="audio/wav"> </audio>
-					<p>
-						Eu tenho essa música como idéia a muito tempo, desde 2023 pelo menos. Eu quero terminar ela mas não tenho certeza como, 
-						também precisa de banda.
-					</p>
+
+					<input type="checkbox" id="ch3" hidden>
+					<div id="content3">
+						<p>
+							Eu tenho essa música como idéia a muito tempo, desde 2023 pelo menos. Eu quero terminar ela mas não tenho certeza como, 
+							também precisa de banda.
+						</p>
+						<label for="ch3" class="button"> Menos </label>
+					</div>
+					<label for="ch3" class="button"> Sobre </label>
 				</dd>
 
 				<!-- more drugs -->
 				<dt> More Drugs </dt>
 				<dd>
-					<br>
+				
 					<audio controls> <source src="../assets/audio/demos/more_drugs.wav" type="audio/wav"> </audio>
-					<p>
-						Eu gravei essa um pouco como uma piada, eu estava tomando clonazepam na época, ainda sinto falta :).
-						Eu acho que gravei ela pelo final de 2023.
-					</p>
+		
+					<input type="checkbox" id="ch4" hidden>
+					<div id="content4">	
+						<p>
+							Eu gravei essa um pouco como uma piada, eu estava tomando clonazepam na época, ainda sinto falta :).
+							Eu acho que gravei ela pelo final de 2023.
+						</p>
+						<label for="ch4" class="button"> Menos </label>
+					</div>
+					<label for="ch4" class="button"> Sobre </label>
 				</dd>
 
 				<!-- Suicide Night -->
 				<dt> Suicide Night </dt>
 				<dd>
-					<br>
+			
 					<audio controls> <source src="../assets/audio/demos/suicide_night.mp3" type="audio/mpeg"></audio>
-					<p>
-						Gravada em Janeiro de 2025. Meio inspirada por Les Rallizes Dénudes e Sonic Youth
-					</p>
+					
+					<input type="checkbox" id="ch5" hidden>
+					<div id="content5">
+						<p>
+							Gravada em Janeiro de 2025. Meio inspirada por Les Rallizes Dénudes e Sonic Youth
+						</p>
+						<label for="ch5" class="button"> Menos </label>
+					</div>
+					<label for="ch5" class="button"> Sobre </label>
 				</dd>
 
 				<!-- baby sized casket -->
 				<dt> Baby Sized Casket </dt>
 				<dd>
-					<br>
+				
 					<audio controls> <source src="../assets/audio/demos/baby_sized_casket.mp3" type="audio/mpeg"></audio>
-					<p>
-						Gravei em Janeiro de 2025. Eu achei que talvez fosse um pouco em mal gosto, é sobre a morte de um bebê recém-nascido.	
-					</p>
+					
+					<input type="checkbox" id="ch6" hidden>
+					<div id="content6">
+						<p>
+							Gravei em Janeiro de 2025. Eu achei que talvez fosse um pouco em mal gosto, é sobre a morte de um bebê recém-nascido.	
+						</p>
+						<label for="ch6" class="button"> Menos </label>
+					</div>
+					<label for="ch6" class="button"> Sobre </label>
 				</dd>
 
 				<!-- pleasegothefuckaway -->
 				<dt> pleasegothefuckaway </dt>
 				<dd>
-					<br>
+				
 					<audio controls> <source src="../assets/audio/demos/pleasegothefuckaway.mp3" type="audio/mpeg"></audio>
-					<p>
-						Gravada em Janeiro de 2025, é sobre minha dificuldade de criar relcionamentos com gente, mas eu não sou super fan dessa.
-					</p>
+					
+					<input type="checkbox" id="ch7"  hidden>
+					<div id="content7">
+						<p>
+							Gravada em Janeiro de 2025, é sobre minha dificuldade de criar relcionamentos com gente, mas eu não sou super fan dessa.
+						</p>
+						<label for="ch7" class="button"> Menos </label>
+					</div>
+					<label for="ch7" class="button"> Sobre </label>
 				</dd>
 
 				<!-- Slip away -->
 				<dt> Slip Away </dt>
 				<dd>
-					<br>
+					
 					<audio controls> <source src="../assets/audio/demos/slip_away.mp3" type="audio/mpeg"></audio>
-					<p>
-						Gravada em 2023, provavelmente é a música que eu tenho salva a mais tempo, eu queria incluir nela na Unfinished Songs, mas
-						achei que não se encaixava. Nessa época eu não tinha uma guitarra elétrica, então eu gravei o meu violão e adicionei distorção
-						em pós. Essa é sobre o sentimento de desrealização que eu sinto o tempo todo. Ela tinha letras mas eu não gostei delas e esqueci
-						desde então.
-					</p>
+
+					<input type="checkbox" id="ch8" hidden>
+					<div id="content8">
+						<p>
+							Gravada em 2023, provavelmente é a música que eu tenho salva a mais tempo, eu queria incluir nela na Unfinished Songs, mas
+							achei que não se encaixava. Nessa época eu não tinha uma guitarra elétrica, então eu gravei o meu violão e adicionei distorção
+							em pós. Essa é sobre o sentimento de desrealização que eu sinto o tempo todo. Ela tinha letras mas eu não gostei delas e esqueci
+							desde então.
+						</p>
+						<label for="ch8" class="button"> Menos </label>
+					</div>
+					<label for="ch8" class="button"> Sobre </label>
 				</dd>
 
 				<!-- insomniac -->
 				<dt> Insomniac </dt>
 				<dd>
-					<br>
-						<audio controls> <source src="../assets/audio/demos/insomniac.wav" type="audio/wav"></audio>
-					<p>
-						Gravada em Janeiro de 2025, bem na virada do ano, eu tava sozinha em casa, isso quase nunca acontece, eu preciso de mais tempo sozinha.
-					</p>
+					
+					<audio controls> <source src="../assets/audio/demos/insomniac.wav" type="audio/wav"></audio>
+
+					<input type="checkbox" id="ch9" hidden>
+					<div id="content9">
+						<p>
+							Gravada em Janeiro de 2025, bem na virada do ano, eu tava sozinha em casa, isso quase nunca acontece, eu preciso de mais tempo sozinha.
+						</p>
+						<label for="ch9" class="button"> Menos </label>
+					</div>
+					<label for="ch9" class="button"> Sobre </label>
 				</dd>
 
 				<!-- improv demo -->
 				<dt> Improv Demo </dt>
 				<dd>
-					<br>
+					
 					<audio controls> <source src="../assets/audio/demos/improv_demo.mp3" type="audio/mpeg"></audio>
-					<p>
-						Gravada em Dezembro de 2024, é uma prática de improvisação, eu tava estudando pra entrar em um conservatório, mas eu não passei, eu acho que foi 
-						pelo estado da minha guitarra talvez, porque na sala de espera eu era a única pessoa que realmente ouvia Jazz.
-					</p>
+
+
+					<input type="checkbox" id="ch10" hidden>
+					<div id="content10">
+						<p>
+							Gravada em Dezembro de 2024, é uma prática de improvisação, eu tava estudando pra entrar em um conservatório, mas eu não passei, eu acho que foi 
+							pelo estado da minha guitarra talvez, porque na sala de espera eu era a única pessoa que realmente ouvia Jazz.
+						</p>
+						<label for="ch10" class="button"> Menos </label>
+					</div>
+					<label for="ch10" class="button"> Sobre </label>
 				</dd>
 				
 				<dt> 'Round Midnight </dt>
 				<dd>
-					<br>
 					<audio controls> <source src="../assets/audio/demos/round_midnight_cover.mp3" type="audio/mpeg"></audio>
-					<p>
-						Gravada em Dezembro de 2024, é um arranjo que compus de um standard de jazz, eu me baseei bastante 
-						<a href="https://www.youtube.com/watch?v=MOm17yw__6U" target="_blank">nessa versão do Wes Montgomery</a>.
-					</p>
+					
+					<input type="checkbox" id="ch11" hidden>
+					<div id="content11">
+						<p>
+							Gravada em Dezembro de 2024, é um arranjo que compus de um standard de jazz, eu me baseei bastante 
+							<a href="https://www.youtube.com/watch?v=MOm17yw__6U" target="_blank">nessa versão do Wes Montgomery</a>.
+						</p>
+						<label for="ch11" class="button"> Menos </label>
+					</div>
+					<label for="ch11" class="button"> Sobre </label>
 				</dd>
 
 				<!-- sad soppy sappy -->
 				<dt> Sad Soppy Sappy </dt>
 				<dd>
-					<br>
 					<audio controls> <source src="../assets/audio/demos/sad_soppy_sappy.mp3" type="audio/mpeg"></audio>
-					<p>
-						Eu tinha esquecido dela, mas eu gostei.
-					</p>
+					
+					<input type="checkbox" id="ch12" hidden>
+					<div id="content12">
+						<p>
+							Eu tinha esquecido dela, mas eu gostei.
+						</p>
+						<label for="ch12" class="button"> Menos </label>
+					</div>
+				
+					<label for="ch12" class="button"> Sobre </label>
 				</dd>
 
 				<!-- stars underground demo -->
 				<dt> Stars, Underground (That's Not Where They Go)</dt>
 				<dd>
-					<br>
 					<audio controls><source src="../assets/audio/demos/stars_underground_demo.mp3" type="audio/mpeg"></audio>
-					<p>
-						Uma demo da <i> Stars, Undeground</i> do meu album <i> Moon, Venus, Lamp Post</i> eu fiquei trabalhando nessa música durante meses.
-					</p>
+
+					<input type="checkbox" id="ch13" hidden>
+					<div id="content13">
+						<p>
+							Uma demo da <i> Stars, Undeground</i> do meu album <i> Moon, Venus, Lamp Post</i> eu fiquei trabalhando nessa música durante meses.
+						</p>
+						<label for="ch13" class="button"> Menos </label>
+					</div>
+					<label for="ch13" class="button"> Sobre </label>
 				</dd>
 
 				<!-- piano1 -->
 				<dt> Piano 1 </dt>
 				<dd>
-					<br>
 					<audio controls><source src="../assets/audio/demos/piano1.wav" type="audio/wav"></audio>
-					<p>
-						Demo da <i> dreams where i'm walking around </i> do album <i> moon, venus, lamp post </i> eu trabalhei nessa durante anos, e considerando isso,
-						eu acho que poderia ter feito melhor.
-					</p>
+
+					<input type="checkbox" id="ch14" hidden>
+					<div id="content14">
+						<p>
+							Demo da <i> dreams where i'm walking around </i> do album <i> moon, venus, lamp post </i> eu trabalhei nessa durante anos, e considerando isso,
+							eu acho que poderia ter feito melhor.
+						</p>
+						<label for="ch14" class="button"> Menos </label>
+					</div>
+					<label for="ch14" class="button"> Sobre </label>
 				</dd>
 
 				<!-- vampire love theme -->
 				<dt> Vampire Love Theme </dt>
 				<dd>
-					<br>
 					<audio controls><source src="../assets/audio/demos/vampire_love_theme.wav" type="audio/wav"></audio>
-					<p>
-						vampire twink bf. Eu quero terminar essa algum dia, não precisa ser uma música longa, pode ser tipo um minuto, mas eu amo a composição.
-					</p>
+
+					<input type="checkbox" id="ch15" hidden>
+					<div id="content15">
+						<p>
+							Eu fiz ela baseada em um tema de uma game jam, eu nunca cheguei a fazer o jogo em si. O tema era "gay vampire".
+						</p>
+						<label for="ch15" class="button"> Menos </label>
+					</div>
+					<label for="ch15" class="button"> Sobre </label>
 				</dd>
 
 				<!-- story furtold -->
 				<dt> Story Furtold </dt>
 				<dd>
-					<br>
 					<audio controls><source src="../assets/audio/demos/story_furtold.wav" type="audio/wav"></audio>
-					<p>
-						Fiz em Fevereiro 2025, eu quero terminar ela, mas não sei aonde levá-la
-					</p>
+
+					<input type="checkbox" id="ch16" hidden>
+					<div id="content16">
+						<p>
+							Fiz em Fevereiro 2025, eu quero terminar ela, mas não sei aonde levá-la
+						</p>
+						<label for="ch16" class="button"> Menos </label>
+					</div>
+					<label for="ch16" class="button"> Sobre </label>
 				</dd>
 
 				<!-- quaint little riff -->
 				<dt> Quaint Little Riff </dt>
 				<dd>
-					<br>
 					<audio controls><source src="../assets/audio/demos/quaintlittleriff.wav" type="audio/wav"></audio>
-					<p>
-						Só um riff de guitarra, um pouco de inspiração de toe.
-					</p>
+
+					<input type="checkbox" id="ch17" hidden>
+					<div id="content17">
+						<p>
+							Só um riff de guitarra, um pouco de inspiração de toe.
+						</p>
+						<label for="ch17" class="button"> Menos </label>
+					</div>
+					<label for="ch17" class="button"> Sobre </label>
 				</dd>
 
 				<!-- jrock turnaround -->
 				<dt> Jrock Turnaround </dt>
 				<dd>
-					<br>
 					<audio controls><source src="../assets/audio/demos/jrock_turnaround.wav" type="audio/wav"></audio>
-					<p>
-						Eu gravei em fevereiro também, eu dei esse nome porque achei que a passagem cromática parecesse algo 
-						de um música de alt rock japonesa
-					</p>
+					
+					<input type="checkbox" id="ch18" hidden>
+					<div id="content18">
+						<p>
+							Eu gravei em fevereiro também, eu dei esse nome porque achei que a passagem cromática parecesse algo 
+							de um música de alt rock japonesa.
+						</p>
+						<label for="ch18" class="button"> Menos </label>
+					</div>
+					<label for="ch18" class="button"> Sobre </label>
 				</dd>
 
 				<!-- On Winter -->
 				<dt> On Winter </dt>
 				<dd>
-					<br>
 					<audio controls><source src="../assets/audio/demos/on_winter.mp3" type="audio/mpeg"></audio>
-					<p>
-						Eu acho que gravei essa em 2024.
-					</p>
+
+					<input type="checkbox" id="ch19" hidden>
+					<div id="content19">
+						<p>
+							Eu acho que gravei essa em 2024.
+						</p>
+						<label for="ch19" class="button"> Menos </label>
+					</div>
+					<label for="ch19" class="button"> Sobre </label>
 				</dd>
 			</dl>
 		</div>		
@@ -343,116 +641,6 @@
 				</dd>
 			</dl>
 		</div>
-	<!--
-		THIS IS THE GEAR PICS DIV
-		<section id="gear_pics">
-		<div class="bordered" style="position:absolute; left:5%; top: 128%; width:45%">
-			<h2> Equipamento </h2>
-			<p style="position:relative; left:10%; width:80%">
-				Eu tenho na verdade vários instrumentos músicais que eu sei tocar em certo nível, 
-				porém todos os meus instrumentos eu adquiri usados, em péssima condição, 
-				e foram muito baratos. Então todos eles estão caindo aos pedaços e eu não tenho o dinheiro pra consertar, ou comprar novos.
-			</p>
-
-			<hr>
-
-			nylon guitar
-			<figure>
-				<div class="flex_container">
-					<img src="../assets/img/gear_pics/ny_gtr_body.jpg" style="width:250px" class="smooth">
-					<img src="../assets/img/gear_pics/ny_gtr_head.jpg" style="width:250px" class="smooth">
-				</div>
-				<figcaption>	
-						Eu ganhei esse violão em 2021, ele foi 250 reais, novo. Eu lembro que a primeira música que aprendi a tocar nele
-						foi <i> Space Oddity </i> do David Bowie. Eu gosto desse violão, eu toco nele o tempo todo, ele é bom pra praticar
-						porque as cordas são bem macias e comfortáveis, porém ele não tem um som muito bom, e não é muito alto, mas eu acho que
-						essa qualidade barata adiciona à minha música, especialmente com o microfone de contato que eu uso com ele.
-				</figcaption>
-			</figure>
-			
-			<hr>
-		
-			electric guitar
-			<figure>
-				<div class="flex_container">
-					<div>
-						<img src="../assets/img/gear_pics/elec_gtr_prep.jpg" style="width:200px" class="smooth">
-					</div>
-					<div>
-						<img src="../assets/img/gear_pics/elec_gtr_back.jpg" style="width:200px" class="smooth">	
-					</div>	
-					
-				</div>
-				<figcaption> 	
-						Minha guitarra com uma baqueta entre as cordas, 
-						esta é uma técnica de guitarra preparada que eu gosto de usar as vezes.
-					</figcaption>
-				<div style="text-align:center">
-					<img src="../assets/img/gear_pics/elec_gtr_head.jpg" style="width:200px" class="smooth">
-					<figcaption> 
-						A maioria das minhas cordas estão faltando agora, 
-						porque eu não tenho dinheiro pra comprar novas cordas :3 
-					</figcaption>
-				</div>
-				<br>
-				<figcaption>	
-						Eu ganhei essa guitarra em 2023, ela é uma <i>Stratocaster</i> da Condor.
-						Originalmente ela tinha três captadores, igual uma strat normal porém agora só tem um.
-						Em algum ponto eu instalei uma killswitch nela mas o botão era um pouco ruim então acabei tirando.
-						Eu tive que trocar os potenciometros várias vezes, e cada vez eu cortava um pouco mais dos fios dos captadores,
-						e, acabei descobrindo depois que não tem como trocar os fios dos captadores, ou pelo menos não é fácil, então eu acabei
-						estragando dois deles tentando, tirei eles, não precisava mais do seletor então tirei ele também e deixei só um captador
-						com um potenciometro de <i>tone</i>. E cobri todos os buracos com fita, eu gostei, meio punk, mas eu preciso de uma guitarra nova
-						urgentemente.
-				</figcaption>
-			</figure>
-
-			<hr>
-
-			michael phones
-			<figure>
-				<div class="flex_container">
-					<div>
-						<img src="../assets/img/gear_pics/main_mic.jpg" style="width:250px" class="smooth">
-						<figcaption > Meu microfone príncipal </figcaption>
-					</div>
-					<div>
-						<img src="../assets/img/gear_pics/contact_mic.jpg" style="width:250px" class="smooth">
-						<figcaption> Meu microfone de contato, que eu uso com o meu violão </figcaption>
-					</div>
-				</div>
-				
-				<br>
-
-				<figcaption>	Meus microfones são todos DIY, eu fiz eles com minhas próprias patas. 
-						Fazer um microfone é bem fácil, todo microfone passivo é, essencialmente um alto falante com os fios ao contrário.
-						Pega um alto falate qualquer e um cabo de áudio, p10 ou p8 e conecta o fio positivo no negativo e vice-versa,
-						e você terá um microfone. O meu microfone príncipal veio de um telefone de linha, e ainda deixei na carcaça original, 
-						e o meu microfone de contato veio do beeper desse mesmo telefone de linha.
-				</figcaption>
-			</figure>
-
-			<hr>
-
-			knobly things
-			<figure>
-				<div class="flex_container">
-					<div>
-						<img src="../assets/img/gear_pics/mixr.jpg" style="width:250px" class="smooth">
-						<figcaption> <i> Behringer Xenyx 1202 </i> do meu tio, um dos canais stereo não funcionam </figcaption>
-						<img src="../assets/img/gear_pics/amp.jpg" style="width:250px" class="smooth">
-						<figcaption> Amplificador <i> Mackintek Maxx 15</i>, amp de guitarra de 15w solid state, foi 300 reais </figcaption>
-					</div>
-					<div>
-						<img src="../assets/img/gear_pics/fx_pedal.jpg" style="width:250px" class="smooth">
-						<figcaption> <i> Cuvave Cube Baby </i> pedal multi efeito que eu também uso como interface de áudio, foi 250 reais </figcaption>
-						<img src="../assets/img/gear_pics/dsn_12.jpg" style="width:250px" class="smooth">
-						<figcaption> <i> Korg DSN-12 </i> software que eu uso no meu 3DS as vezes, é um sintetizador/sequenciador bem detalhado pra um app da eshop </figcaption>
-					</div>
-				</div>
-			</figure>
-		</div>
-	-->
 
 		<div class="menu_bar" >
 			<!-- botão para voltar para a front page-->
